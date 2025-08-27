@@ -21,10 +21,6 @@ The site includes images and icons such as:
 - Donation graphics
 - Social media icons (Facebook, Instagram, Twitter)
 
-## Tech Stack
-
-- **HTML5** – Structure
-- **CSS3** – Style
 
   
 
