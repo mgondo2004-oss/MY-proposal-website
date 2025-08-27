@@ -26,13 +26,5 @@ The site includes images and icons such as:
 - **HTML5** – Structure
 - **CSS3** – Style
 
-  MY-proposal-website/
-├── index.html
-├── about.html
-├── service.html
-├── contact.html
-├── enquiry.html
-├── style.css
-├── images/
-│   └── [All images and icons]
+  
 
