@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact- Learn and Grow Intiative</title>
-    <link rel="stylesheet" href="css/style">
+    <title>Contact - Learn and Grow Initiative</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Learn and Grow Intiative</h1>
+        <h1>Learn and Grow Initiative</h1>
         <nav>
-            <div><a href="index.html">Home</a></div>
-            <div><a href="about.html">About Us</a></div>
-            <div><a href="service">Programmes</a></div>
-            <div><a href="enquiry.html">Enquiry</a></div>
-            <div><a href="contact">Contact Us</a></div>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="services.html">Programmes</a></div>
+                <div><a href="enquiry.html">Enquiry</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Email: info@learnandgrowintiative.org</p>
-        <p>Phone: +27 (0) 76 123 678</p>
-        <p>Location.: Eastern Cape, South Africa</p>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: info@learnandgrowinitiative.org</p>
+            <p>Phone: +27 (0) 76 123 678</p>
+            <p>Location: Eastern Cape, South Africa</p>
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Contact us" style="width:100%; max-height:300px; object-fit:cover; margin-top:1rem; border-radius:8px;">
+        </section>
 
         <form>
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="messagee">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <input type="Submit" value="Send">
+            <input type="submit" value="Send">
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2025 Learn and Grow Intiative</p>
+        <p>&copy; 2025 Learn and Grow Initiative</p>
     </footer>
-    
 </body>
 </html>
