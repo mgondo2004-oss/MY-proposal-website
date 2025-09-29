@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry- Learn and Grow Intiative</title>
+    <title>Enquiry - Learn and Grow Initiative</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Learn and Grow Intiative</h1>
-     <nav>
-        <div><a href="index.html">Home</a></div>
-        <div><a href="about.html">About Us</a></div>
-        <div><a href="service.html">Programmes</a></div>
-        <div><a href="enquiry.html">Enquiry</a></div>
-        <div><a href="contact.html">Contact Us</a></div>
-    </nav>
+        <h1>Learn and Grow Initiative</h1>
+        <nav>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="services.html">Programmes</a></div>
+                <div><a href="enquiry.html">Enquiry</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <h2>Get Involved</h2>
-        <p>Fill out the form below to enquire about volunteering , sponsoring or supporting learn and growth</p>
+        <section>
+            <h2>Get Involved</h2>
+            <p>Fill out the form below to enquire about volunteering, sponsoring or supporting Learn and Grow Initiative.</p>
+        </section>
 
         <form>
-            <label for="name">Full Name</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Adress:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Your Enquiry:</label><br>
-            <textarea id="message" name="message"></textarea>
-            <br>
+            <label for="message">Your Enquiry:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
             <input type="submit" value="Submit">
-            <br>
         </form>
     </main>
 
-
     <footer>
-        <p>&copy; 2025 Learn and Grow Intiative</p>
+        <p>&copy; 2025 Learn and Grow Initiative</p>
     </footer>
-</body> 
+</body>
 </html>
