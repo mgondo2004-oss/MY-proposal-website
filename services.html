@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programmes - Learn and Grow Initiative</title>
+    <meta name="description" content="Explore our educational programmes and initiatives for rural children">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About Us</a></div>
+            <div><a href="services.html">Programmes</a></div>
+            <div><a href="enquiry.html">Enquiry</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Our Programmes</h1>
+        <p>Comprehensive educational initiatives designed for rural communities</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <div class="search-input">
+                <input type="text" placeholder="Search programmes...">
+                <button type="button">Search</button>
+            </div>
+        </div>
+
+        <div class="programme-grid">
+            <div class="programme-card searchable-item">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tutoring session">
+                <div class="programme-card-content">
+                    <h2>Tutoring & After-School Classes</h2>
+                    <p>We provide free lessons in all subjects for every learner to improve in their academics.</p>
+                    <button class="cta-buttons" data-modal="tutoring-modal">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="programme-card searchable-item">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Books and resources">
+                <div class="programme-card-content">
+                    <h2>Textbook & Resources</h2>
+                    <p>Our programme ensures every learner has access to textbooks and education.</p>
+                    <button class="cta-buttons" data-modal="resources-modal">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="programme-card searchable-item">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Children playing sports">
+                <div class="programme-card-content">
+                    <h2>Sports & Arts Development</h2>
+                    <p>We promote creativity and physical growth by supporting talents in sports, arts and culture.</p>
+                    <button class="cta-buttons" data-modal="sports-modal">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="gallery-section">
+            <h2>Programme Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Tutoring session">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Educational resources">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Sports activities">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content">
+    </div>
+
+    <div id="tutoring-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Tutoring Programme Details</h2>
+            <p>Our tutoring programme offers personalized academic support in all major subjects.</p>
+        </div>
+    </div>
+
+    <div id="resources-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Educational Resources</h2>
+            <p>We provide textbooks, stationery, and digital learning tools to support education.</p>
+        </div>
+    </div>
+
+    <div id="sports-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Sports & Arts Programme</h2>
+            <p>Developing talents through various sports, arts, and cultural activities.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Learn and Grow Initiative</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
