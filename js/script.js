@@ -221,18 +221,20 @@ function showSuccessMessage(form, message) {
 }
 
 function initMap() {
-    const mapContainers = document.querySelectorAll('.map-container');
+    const mapContainers = document.querySelectorAll('#map');
     
     mapContainers.forEach(container => {
-        const lat = container.getAttribute('data-lat');
-        const lng = container.getAttribute('data-lng');
-        
-        if (lat && lng) {
-            renderMap(container, parseFloat(lat), parseFloat(lng));
+        if (typeof L !== 'undefined') {
+            const map = L.map(container).setView([-31.9685, 26.9186], 12);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            L.marker([-31.9685, 26.9186])
+                .addTo(map)
+                .bindPopup('<strong>Learn and Grow Initiative</strong><br>Eastern Cape, South Africa')
+                .openPopup();
         }
     });
-}
-
-function renderMap(container, lat, lng) {
-    container.innerHTML = '<div style="height:100%; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666;">Interactive Map - Coordinates: ' + lat + ', ' + lng + '</div>';
 }
