@@ -4,55 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Learn and Grow Initiative</title>
-    <meta name="description" content="Get in touch with Learn and Grow Initiative">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="about.html">About Us</a></div>
-            <div><a href="services.html">Programmes</a></div>
-            <div><a href="enquiry.html">Enquiry</a></div>
-            <div><a href="contact.html">Contact Us</a></div>
-        </div>
-    </nav>
-
     <header>
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you</p>
+        <h1>Learn and Grow Initiative</h1>
+        <nav>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="services.html">Programmes</a></div>
+                <div><a href="enquiry.html">Enquiry</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section>
-            <h2>Our Location</h2>
-            <div class="map-container" data-lat="-31.9685" data-lng="26.9186">
-            </div>
+            <h2>Contact Us</h2>
             <p>Email: info@learnandgrowinitiative.org</p>
             <p>Phone: +27 (0) 76 123 678</p>
             <p>Location: Eastern Cape, South Africa</p>
+            <div id="map" class="map-container"></div>
         </section>
 
-        <form id="contact-form">
-            <label for="name">Your Name</label>
+        <form>
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject" required>
-                <option value="">Select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="support">Support</option>
-                <option value="partnership">Partnership</option>
-                <option value="feedback">Feedback</option>
-            </select>
-            
-            <label for="message">Your Message</label>
+
+            <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <input type="submit" value="Send Message">
+
+            <input type="submit" value="Send">
         </form>
     </main>
 
@@ -60,6 +45,20 @@
         <p>&copy; 2025 Learn and Grow Initiative</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const map = L.map('map').setView([-31.9685, 26.9186], 12);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            
+            L.marker([-31.9685, 26.9186])
+                .addTo(map)
+                .bindPopup('<strong>Learn and Grow Initiative</strong><br>Eastern Cape, South Africa')
+                .openPopup();
+        });
+    </script>
 </body>
 </html>
