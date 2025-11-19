@@ -22,6 +22,13 @@
     </header>
 
     <main>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="search" placeholder="Search pages and services...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+
         <section>
             <h2>Contact Us</h2>
             <p>Email: info@learnandgrowinitiative.org</p>
@@ -39,13 +46,6 @@
 
             <input type="submit" value="Send">
         </form>
-        <!-- RIGHT SIDE: Google Form -->
-        <div style="flex: 1; min-width: 300px;">
-<h2>Send Us a Message</h2>
-<iframe
-src="https://docs.google.com/forms/d/e/1FAIpQLSd7JP_i22fSu0jvRQE2UKL7QT2tKCyWbXX70WuHXQfNZ7BopA/viewform?embedded=true" width="640" height="3461" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</iframe>
-</div>
     </main>
 
     <footer>
@@ -53,19 +53,6 @@ src="https://docs.google.com/forms/d/e/1FAIpQLSd7JP_i22fSu0jvRQE2UKL7QT2tKCyWbXX
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const map = L.map('map').setView([-31.9685, 26.9186], 12);
-            
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-            
-            L.marker([-31.9685, 26.9186])
-                .addTo(map)
-                .bindPopup('<strong>Learn and Grow Initiative</strong><br>Eastern Cape, South Africa')
-                .openPopup();
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
