@@ -4,81 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry - Learn and Grow Initiative</title>
-    <meta name="description" content="Enquire about volunteering, sponsoring or supporting our initiative">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="about.html">About Us</a></div>
-            <div><a href="services.html">Programmes</a></div>
-            <div><a href="enquiry.html">Enquiry</a></div>
-            <div><a href="contact.html">Contact Us</a></div>
-        </div>
-    </nav>
-
     <header>
-        <h1>Get Involved</h1>
-        <p>Join us in making a difference in children's lives</p>
+        <h1>Learn and Grow Initiative</h1>
+        <nav>
+            <div class="nav">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="services.html">Programmes</a></div>
+                <div><a href="enquiry.html">Enquiry</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="accordion-container">
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <span>Volunteer Opportunities</span>
-                    <span>+</span>
-                </div>
-                <div class="accordion-content">
-                    <p>We need passionate volunteers for tutoring, mentoring, and community outreach programmes.</p>
-                </div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="search" placeholder="Search pages and services...">
+                <button class="search-button">Search</button>
             </div>
-            
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <span>Sponsorship Options</span>
-                    <span>+</span>
-                </div>
-                <div class="accordion-content">
-                    <p>Various sponsorship levels available to support different aspects of our programmes.</p>
-                </div>
-            </div>
-            
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <span>Partnerships</span>
-                    <span>+</span>
-                </div>
-                <div class="accordion-content">
-                    <p>Collaborate with us to create lasting impact in rural education.</p>
-                </div>
-            </div>
+        </div>
+
+        <section>
+            <h2>Get Involved</h2>
+            <p>Fill out the form below to enquire about volunteering, sponsoring or supporting Learn and Grow Initiative.</p>
         </section>
 
-        <form id="enquiry-form">
+        <form>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email Address</label>
+
+            <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-            
-            <label for="interest">Area of Interest</label>
-            <select id="interest" name="interest" required>
-                <option value="">Select an option</option>
-                <option value="volunteer">Volunteering</option>
-                <option value="sponsor">Sponsorship</option>
-                <option value="partner">Partnership</option>
-                <option value="other">Other</option>
-            </select>
-            
-            <label for="message">Your Enquiry</label>
+
+            <label for="message">Your Enquiry:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <input type="submit" value="Submit Enquiry">
+
+            <input type="submit" value="Submit">
         </form>
     </main>
 
